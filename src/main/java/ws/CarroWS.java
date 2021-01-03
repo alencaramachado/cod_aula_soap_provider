@@ -29,7 +29,7 @@ public class CarroWS {
     @WebMethod(operationName = "cadastrar_carro")
     @WebResult(name = "carro")
     public Carro cadastraCarro(@WebParam(name = "carro") Carro carro,
-                               @WebParam(name = "chave  ") String chave){
+                               @WebParam(name = "chave") String chave){
         this.cDao.cadastrar(carro, chave);
         return carro;
     }
